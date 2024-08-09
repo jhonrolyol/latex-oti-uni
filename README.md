@@ -32,7 +32,12 @@ Este curso está dirigido a alumnos de pregrado de todas las universidades.
 
 ### Sesión 2.- ESCRITURA DE TEXTO NORMAL
 - *1.- Escritura de texto normal.*
-
+	- 1.- [Ejemplo Informe con APA](https://es.overleaf.com/latex/examples/ejemplo-informecon-apa/brktbxpkdhqg)	
+	- 2.- [Plantillas — American Psychological Association](https://es.overleaf.com/latex/templates/tagged/apa)
+	- 3.- [Plantilla APA7](https://es.overleaf.com/latex/templates/plantilla-apa7/swsvntsgyvbx)
+	- 4.- [Gallery — American Psychological Association](https://es.overleaf.com/gallery/tagged/apa)
+	- 5.- [Guía temática sobre citas bibliográficas UC3M: Gestionar la Bibliografía en LaTeX](https://uc3m.libguides.com/guias_tematicas/citas_bibliograficas/bibliografia_latex)
+	
 ### Sesión 3.- ESCRITURA DE TEXTO NORMAL Y CIENTÍFICO
 - *1.- Escritura de texto normal.*
 - *2.- Escritura de texto científico.*
