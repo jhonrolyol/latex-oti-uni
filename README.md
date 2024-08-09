@@ -31,9 +31,7 @@ Este curso está dirigido a alumnos de pregrado de todas las universidades.
 - *3.- Introducción a la escritura de texto normal.*
 
 ### Sesión 2.- ESCRITURA DE TEXTO NORMAL
-- *1.- Escritura de texto normal.*
-
-Links de información sobre APA y LaTeX
+- *1.- Escritura de texto normal.* Links de información sobre APA y LaTeX
 	- [Ejemplo Informe con APA](https://es.overleaf.com/latex/examples/ejemplo-informecon-apa/brktbxpkdhqg)	
 	- [Plantillas — American Psychological Association](https://es.overleaf.com/latex/templates/tagged/apa)
 	- [Plantilla APA7](https://es.overleaf.com/latex/templates/plantilla-apa7/swsvntsgyvbx)
