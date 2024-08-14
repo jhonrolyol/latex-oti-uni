@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multicol}
+\usepackage{amsmath,amssymb} 
+
+\title{Sesión 003 de LaTeX}
+\author{Jorge Luis Mírez Tarrillo}
+\date{Agosto 13, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sesión 13 de agosto del 2024}
+
+Vamos a usar el comando \textit{verbatim} con un ejemplo que está en el \textbf{PPT} de la presente sesión a continuación:
+
+\begin{verbatim}
+    Sub Trapecio(a,b,n,delta)
+    Dim N As Integer
+    Dim F As New clsMathParser
+       suma = 0
+       h = (b - a) / N
+    For i = 1 To N - 1
+      xi = a + i * h
+      suma = suma + F.Eval1(xi)
+    Next i
+    End Sub
+\end{verbatim}
+
+Otra de las cosas que se pueden redactar en Overleaf es la presencia de ecuaciones tanto en el cuerpo del documento como por ejemplo $\alpha = \beta + \gamma$ así como en tablas o en listas numeradas, como se puede apreciar a continuación.
+
+\begin{enumerate}
+    \item {\textbf{[3 puntos]}} Sea $A = \{1,b,c,d,7\}$ y $B = \{1,2,c,d\}.$ Calcular ${\cal P}(A\, \Delta\, B).$
+    \item {\textbf{[5 Puntos]}} Muestre que $A-(B\,\cap\,C)=(A-B)\,\cup\,(A - C)$
+    \item {\textbf{[5 Puntos]}} Mostrar que $[\;A\,\cup C\;\subseteq\;B\,\cup\,C\;\;\wedge\;\; A\,\cap\,C=\emptyset\;]\; \Longrightarrow\;A\,\subseteq\,B$
+    \item {\textbf{[2 Puntos]}} Sea $Re=(R^*, R^*,R)$ definida por $x\, \Re\, y\;\Longrightarrow\; xy\;>\;0.$
+    \begin{enumerate}
+        \item {\textbf{[3 Puntos]}} Muestre que $\Re$ es una relación de equivalencia.
+        \item {\textbf{[2 Puntos]}} Determine las clases de equivalencia $\overline{1}$ y $\overline{-1}.$
+        \item {\textbf{[1 Punto]}} Determine $R^*/\Re$ (el conjunto cociente).
+    \end{enumerate}
+\end{enumerate}
+
+Los descriptores con texto se pueden hacer con el comando \textit{description}, por ejemplo:
+
+\begin{description}
+    \item[Media muestral:] $\frac{1}{n-1} \sum_{i=1}^n (X_i - \bar{X_n}^2)$
+    \item[Varianza muestral:] $\frac{1}{n-1} \sum_{i=1}^n (X_i - \bar{X_n})^2$ 
+    \item[Momentos muestrales:] $\frac{1}{n} \sum_{i=1}^n X_i^k$
+\end{description}
+
+Ahora vamos a aprender a escribir las ecuaciones en texto aparte de tal manera que sea enumerado y citado en el cuerpo del documento, por ejemplo la Ec. \eqref{eq_1} muestra el cálculo de la potencia aparente $S$ que es igual a la suma de la potencia activa $P$ más la potencia reactiva $Q$ e $j = \sqrt(-1)$.
+\begin{equation} \label{eq_1}
+    S = P + jQ
+\end{equation}
+
+Ahora vamos a aprender a escribir las ecuaciones en texto aparte de tal manera que sea enumerado y citado en el cuerpo del documento, por ejemplo: el cálculo de la potencia aparente $S$ se muestra en la Ec. \eqref{eq_2} donde $P$ es la potencia activa, $Q$ es la potencia reactiva $Q$ y $j = \sqrt(-1)$.
+\begin{equation} \label{eq_2}
+    S = P + j \times Q
+\end{equation}
+
+Algunos otros ejemplos de expresiones matemáticas pueden ser las Ec. \eqref{eq_3}, \eqref{eq_4}, \eqref{eq_5} y \eqref{eq_6}
+\begin{equation} \label{eq_3}
+    x^p
+\end{equation}
+\begin{equation} \label{eq_4}
+    sen^2(x)
+\end{equation}
+\begin{equation} \label{eq_5}
+    a_i^j
+\end{equation}
+\begin{equation} \label{eq_6}
+    \int_a^b f(x)\, dx
+\end{equation}
+
+
+\end{document}
