@@ -1,0 +1,164 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multicol}
+\usepackage{amsmath,amssymb} 
+
+\title{Sesión 004 de LaTeX}
+\author{Jorge Luis Mírez Tarrillo}
+\date{Agosto 14, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sesión 14 de agosto del 2024}
+
+En general para fracciones se usa la expresión $\frac{x + 1}{x - 1}$ tanto si se coloca en el cuerpo del documento o si se coloca aparte como en la Ec. \eqref{ec_01}.
+
+\begin{equation} \label{ec_01}
+    \frac{x + 1}{x - 1}
+\end{equation}
+
+Usando el comando \textit{over} sería $x + 1 \over x - 1$. También existen otros comandos que se pueden mencionar como por ejemplo \textit{dfrac} que se utiliza para escribir la Ec. \eqref{ec_02} y \textit{tfrac} para escribir la Ec. \eqref{ec_03}.
+
+\begin{equation} \label{ec_02}
+    \dfrac{x + 1}{x - 1}
+\end{equation}
+
+\begin{equation} \label{ec_03}
+    \tfrac{x + 1}{x - 1}
+\end{equation}
+
+Con los comandos mencionados podemos hacer una combinación de ellos para crear expresiones de fracciones más complejas, por ejemplo en la Ec. \eqref{ec_04} en donde el numerador es una fracción. (\textbf{Nota:} La Ec. \eqref{ec_04} es similar a la Ec. \eqref{ec_05}, la diferencia está en el uso del comando over y frac) 
+
+\begin{equation} \label{ec_04}
+    {{x + 4 \over 3} \over x - 1}
+\end{equation}
+
+\begin{equation} \label{ec_05}
+    \frac{\frac{x + 1}{3}}{x - 1}
+\end{equation}
+
+Existen expresiones que involucran una base elevado a un exponente y por lo tanto el uso de paréntesis o corchetes debe ser tal que cubra la base o similar, esto es posible usando los comandos left y right. La diferencia se puede observar entre las Ec. \eqref{ec_06} y \eqref{ec_07}.
+
+\begin{equation} \label{ec_06}
+    (1 + \frac{1}{x})^{\frac{n + 1}{n}}
+\end{equation}
+
+\begin{equation}  \label{ec_07}
+    \left ( 1 + \frac{1}{x}  \right)^{\frac{n + 1}{n}}
+\end{equation}
+
+Otros ejemplos son las Ec. \eqref{ec_08} y \eqref{ec_09}.
+
+\begin{equation}  \label{ec_08}
+    \displaystyle {\left ( 1 + \frac{1}{x}  \right)^{\frac{n + 1}{n}}}
+\end{equation}
+
+\begin{equation}  \label{ec_09}
+    \displaystyle {\left ( 1 + \frac{1}{x}  \right)} ^{{\displaystyle \frac{n + 1}{n}}}
+\end{equation}
+
+A continuación vamos a desarrollar las expresiones matemáticas que están dadas en la pág. 3 del PPT del curso. Ejemplo la siguiente ecuación no tiene numeración asociada como lo es las otras ecuaciones.
+
+\begin{equation*} 
+    {x + 1 \atop x - 1}    
+\end{equation*}
+
+Ejemplos de expresiones usadas en algebra lineal (ver Ec. \eqref{ec_10}, \eqref{ec_11}, \eqref{ec_12}).
+
+\begin{equation} \label{ec_10}
+    {x + 1 \above 1.2pt x - 1}
+\end{equation}
+
+\begin{equation} \label{ec_11}
+    {x + 1 \brace x - 1}
+\end{equation}
+
+\begin{equation} \label{ec_12}
+    {x + 1 \brack x - 1}
+\end{equation}
+
+Otros ejemplos se pueden mencionar a continuación: La Ec. \eqref{ec_13} que sirve para definición de funciones; la Ec. \eqref{ec_14} que es una expresión típica sobre límite de una función; la Ec. \eqref{ec_15} que es expresión usada en análisis combinatorio, y; la Ec. \eqref{ec_16} es una expresión general de la multiplicación de componentes de dos vectores de diferente tamaño.
+
+\begin{equation} \label{ec_13}
+    \displaystyle{a \stackrel{f} {\rightarrow} b}
+\end{equation}
+
+\begin{equation} \label{ec_14}
+    \displaystyle{\lim_{x \rightarrow 0}} f(x)
+\end{equation}
+
+\begin{equation} \label{ec_15}
+    \displaystyle{a \choose b}
+\end{equation}
+
+\begin{equation} \label{ec_16}
+    \displaystyle{\sum_{i = 0}^{N} a_i b_i}
+\end{equation}
+
+\begin{equation} \label{ec_16}
+    \displaystyle{\sum_{\substack{0 < i < m \\ 0 < j < n}} a_i b_i}
+\end{equation}
+
+A continuación las Ec. \eqref{ec_17} - \eqref{ec_22} son ejemplos de expresiones de integrales.
+
+\begin{equation} \label{ec_17}
+    \int F(x) \, dx
+\end{equation}
+
+\begin{equation} \label{ec_18}
+    \int_{a}^{b} F(x) \, dx
+\end{equation}
+
+\begin{equation} \label{ec_19}
+    \iint F(x,y) \, dx dy
+\end{equation}
+
+\begin{equation} \label{ec_20}
+    \int_{a}^{b} \int_{a}^{b} F(x,y) \, dx \, dy
+\end{equation}
+
+\begin{equation} \label{ec_21}
+    \iiint F(x,y,z) \, dx \, dy \, dz
+\end{equation}
+
+\begin{equation} \label{ec_22}
+    \int_{a}^{b} \int_{c}^{d} \int_{e}^{f} F(x,y,z) \, dx \, dy \, dz
+\end{equation}
+
+Las Ec. \eqref{eq_001} - \eqref{eq_008} son ejemplos de derivadas.
+
+\begin{equation} \label{eq_001}
+    \frac{dy}{dx}
+\end{equation}
+
+\begin{equation} \label{eq_002}
+    \frac{df(x)}{dx}
+\end{equation}
+
+\begin{equation} \label{eq_003}
+    \frac{d}{dx} f(x)
+\end{equation}
+
+\begin{equation} \label{eq_004}
+    \frac{\partial M(x,y)}{\partial x}
+\end{equation}
+
+\begin{equation} \label{eq_005}
+    \frac{\partial}{\partial x} M(x,y)
+\end{equation}
+
+\begin{equation} \label{eq_006}
+    \frac{\partial^2 M(x,y)}{\partial x \, \partial y}
+\end{equation}
+
+\begin{equation} \label{eq_007}
+    \frac{\partial^2 M(x,y)}{\partial x^2}
+\end{equation}
+
+\begin{equation} \label{eq_008}
+    \frac{\partial^2}{\partial x^2} M(x,y)
+\end{equation}
+
+\end{document}
