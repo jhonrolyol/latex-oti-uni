@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multicol}
+\usepackage{amsmath,amssymb} 
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+
+
+\title{Sesión 005 de LaTeX}
+\author{Jorge Luis Mírez Tarrillo}
+\date{Agosto 20, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sesión 20 de agosto del 2024}
+
+Vamos a realizar una primera tabla en la presente sesión. \\
+
+Ejemplo 1. El uso del comando tabular.\\
+
+\begin{tabular}{|c|c|c|} \hline  
+    $p$ & $q$ & $p \rightarrow q$  \\ \hline
+    0 & 0 & 1  \\ 
+    0 & 1 & 1  \\ \cline{1-2}
+    1 & 0 & 0  \\
+    1 & 1 & 1  \\ \hline
+\end{tabular} 
+\newline
+
+Ejemplo 2. Para lo que es una tabla flotante se usa el comando table (ver Tabla \ref{tab:01}).
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|} \hline
+        1 & 2 \\ \hline
+        3 & 4 \\ \hline
+    \end{tabular}
+    \caption{\textbf{Tabla ejemplo nro 2}}
+    \label{tab:01}
+\end{table}
+
+Ejemplo 3. Ejemplo de tabla con nombre en cada columna (ver Tabla \ref{tab:02}).
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|} \hline
+        \textbf{Nro.} & \textbf{Peso [kg]} & \textbf{Talla [cm]} \\ \hline
+        1 & 40 & 150 \\ \hline
+        2 & 50 & 155 \\ \hline
+        3 & 46 & 140 \\ \hline
+        4 & 48 & 148 \\ \hline
+    \end{tabular}
+    \caption{\textbf{Tabla ejemplo nro 2}}
+    \label{tab:02}
+\end{table}
+
+Ejemplo 4. Ejemplo de tabla tipo IEEE (ver Tabla \ref{tab:03}).
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c c c} \hline
+        \textbf{Nro.} & \textbf{Peso [kg]} & \textbf{Talla [cm]} \\ \hline
+        1 & 40 & 150 \\ \hline
+        2 & 50 & 155 \\ \hline
+        3 & 46 & 140 \\ \hline
+        4 & 48 & 148 \\ \hline
+    \end{tabular}
+    \caption{\textbf{Tabla ejemplo tipo recomendación de IEEE}}
+    \label{tab:03}
+\end{table}
+
+Ejemplo 5: Usando otra vez table con tres filas y tres columnas
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c|} \hline
+        0 & 0 & 1  \\ 
+        0 & 1 & 1  \\ \cline{1-2}
+        1 & 0 & 0  \\ \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+Ejemplo 6: Usando color en tablas.
+
+\begin{table}[h!]
+    \centering
+    \rowcolors{1}{}{gray!20}
+    \begin{tabular}{c|c}
+       \rowcolor{yellow} $x_{n+1}$  & $x_{n+1} - x_{n}$ \\
+         1 & 2 \\ 
+    \end{tabular}
+    \caption{Iteración de Newton para $x^2-cos(x)-1=8$}
+    \label{tab:my_label}
+\end{table}
+
+\end{document}
