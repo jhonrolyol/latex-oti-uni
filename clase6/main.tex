@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}  % usar símbolos y acentos desde el teclado
+\usepackage{amsmath,amssymb}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{rotating}
+\usepackage{wrapfig} % Figuras al lado del texto
+\usepackage[rflt]{floatflt} % texto se acomode al contorno de la figura
+
+
+\title{Sesión 006 de LaTeX}
+\author{Jorge Luis Mírez Tarrillo}
+\date{Agosto 27, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sesión 27 de agosto del 2024}
+
+Ejemplo 1: Usando el ambiente wrapfigure. \\
+
+\begin{wrapfigure}{r}{2cm}
+    \includegraphics[width=4cm]{UNI_logo_147.pdf}
+\end{wrapfigure}
+
+La Universidad Nacional de Ingeniería (siglas: UNI) es una universidad pública peruana ubicada en la ciudad de Lima. Fundada en 1876 como la Escuela de Ingenieros Civiles y de Minas, esta institución de carácter teórico-práctico tuvo al ingeniero polaco Eduardo de Habich como su primer director y formó parte de una iniciativa estatal que tenía por fin impulsar el desarrollo del Perú. Fue la primera Escuela de Ingenieros del país, posteriormente convertida en universidad en 1955. Como centro de educación politécnica está especializado en ingeniería, ciencias, y arquitectura. Su oferta académica está distribuida en once facultades que abarcan 29 carreras de pregrado, 57 programas de maestría y diez doctorados. \\
+
+Conocida por su rigurosa selectividad, la universidad cuenta con más de trece mil estudiantes y es considerada el principal centro de formación de ingenieros, científicos y arquitectos del Perú. Su campus principal se localiza en el distrito del Rímac y cuenta con un área de 66 hectáreas. \\
+
+Ejemplo 2: Usando el ambiente floatflt. \\
+
+\begin{floatingfigure}[l]{8.0 cm}
+    \includegraphics[width=6cm]{UNI_logo_147.pdf}
+    \caption{Logo UNI}
+    \label{Figura}
+\end{floatingfigure}
+
+La Universidad Nacional de Ingeniería (siglas: UNI) es una universidad pública peruana ubicada en la ciudad de Lima. Fundada en 1876 como la Escuela de Ingenieros Civiles y de Minas, esta institución de carácter teórico-práctico tuvo al ingeniero polaco Eduardo de Habich como su primer director y formó parte de una iniciativa estatal que tenía por fin impulsar el desarrollo del Perú. Fue la primera escuela de ingenieros del país, posteriormente convertida en universidad en 1955. Como centro de educación politécnica está especializado en ingeniería, ciencias, y arquitectura. Su oferta académica está distribuida en once facultades que abarcan 29 carreras de pregrado, 57 programas de maestría y diez doctorados. \\
+
+Conocida por su rigurosa selectividad, la universidad cuenta con más de trece mil estudiantes y es considerada el principal centro de formación de ingenieros, científicos y arquitectos del Perú. Su campus principal se localiza en el distrito del Rímac y cuenta con un área de 66 hectáreas.\\
+
+\textbf{Ejemplo 3:} Ejemplo de una tabla con dos columnas, una fila y figuras. \\
+
+El resultado se muestra en la Tabla \ref{Tabla_001}.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{5cm}|p{5cm}|} \hline
+       \begin{center}
+            \includegraphics[width=4cm]{UNI_logo_147.pdf}
+            \par \textbf{UNI Aniversario 147}
+            \par Se realizó en Julio del 2023
+       \end{center} 
+       &   % límite entre columnas
+       \begin{center}
+           \includegraphics[width=4cm]{logo_latex.pdf}
+           \par \textbf{\LaTeX}
+           \par Organizado por OTI UNI Agosto 2024
+       \end{center}
+       \\ \hline
+    \end{tabular}
+    \caption{Curso para estudiantes y egresados a nivel nacional}
+    \label{Tabla_001}
+\end{table}
+
+\end{document}
